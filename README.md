@@ -21,7 +21,7 @@ Step-by-step guide recommendations:
 3) Paste the copied into test.txt
 4) Open main.py and comment out lines (13-38)
 5) Enter the following code:
-```
+```python
 os.chdir("..")
 file_path = "test.txt" 
 
