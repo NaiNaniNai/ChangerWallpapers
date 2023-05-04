@@ -22,6 +22,7 @@ Step-by-step guide recommendations:
 4) Open main.py and comment out lines (13-38)
 5) Enter the following code:
 
+```
 os.chdir("..")
 file_path = "test.txt" 
 
@@ -40,7 +41,7 @@ new_contents = file_contents.replace(file_contents.split("\n")[index-1], way_to_
 
 with open(file_path, "w") as f:
     f.write(new_contents)
-
+```
 6) Check if your test text file changes the content you need.
 7) If the result is positive, delete the new lines, and uncomment the lines (13-38)
 
