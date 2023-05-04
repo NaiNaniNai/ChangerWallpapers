@@ -23,7 +23,7 @@ Step-by-step guide recommendations:
 5) Enter the following code:
 
 os.chdir("..")
-file_path = "test.txt" # Selecting the configuration file itself
+file_path = "test.txt" 
 
 with open(file_path, "r") as f:
     file_contents = f.read()
@@ -65,16 +65,16 @@ It also puts it in a state that allows you to make changes to the configuration 
 os.chdir("Wallpapers") # Go to the Wallpapers folder
 wallpaper = os.listdir()    # Finding all the image files that are in the folder. You can also delete/add new images of your choice
 randomizer = random.randint(0, len(wallpaper)-1) # Selecting the index of a random single image
-random_wallpaper = wallpaper[randomizer] # Selecting this image
-itself way_to_wallpaper = "Image="+os.getcwd()+"/"+random_wallpaper # Getting the full name of this image suitable for entering into the config file
+random_wallpaper = wallpaper[randomizer] # Selecting this image itself
+way_to_wallpaper = "Image="+os.getcwd()+"/"+random_wallpaper # Getting the full name of this image suitable for entering into the config file
 
 3) Block No. 3:
 
 This block finds the configuration file itself
 
-home_dir = os.path.expanduser("~") #Go to
-the os.chdir(home_dir) home folder #
-Go to the os.chdir home folder(".config") # Go to the .config folder
+home_dir = os.path.expanduser("~") #Go to the home folder
+os.chdir(home_dir) # Go to the home folder
+os.chdir(".config") # Go to the .config folder
 file_path = "plasma-org.kde.plasma.desktop-appletsrc" # Selecting the configuration file itself
 
 4) Block No. 4:
@@ -125,7 +125,7 @@ RUSSIAN LANGUAGE (РУССКИЙ ЯЗЫК:)
 5) Внесите следующий код:
 
 os.chdir("..")
-file_path = "test.txt" # Selecting the configuration file itself
+file_path = "test.txt" 
 
 with open(file_path, "r") as f:
     file_contents = f.read()
