@@ -62,7 +62,6 @@ import random - Importing the random module
 This block finds and selects a random image from the Wallpapers folder (which is located in the same directory, if you downloaded everything correctly).
 It also puts it in a state that allows you to make changes to the configuration file.
 
-# Choose random image
 os.chdir("Wallpapers") # Go to the Wallpapers folder
 wallpaper = os.listdir()    # Finding all the image files that are in the folder. You can also delete/add new images of your choice
 randomizer = random.randint(0, len(wallpaper)-1) # Selecting the index of a random single image
@@ -73,7 +72,6 @@ itself way_to_wallpaper = "Image="+os.getcwd()+"/"+random_wallpaper # Getting th
 
 This block finds the configuration file itself
 
-# Search for the file responsible for the current desktop wallpaper
 home_dir = os.path.expanduser("~") #Go to
 the os.chdir(home_dir) home folder #
 Go to the os.chdir home folder(".config") # Go to the .config folder
@@ -83,7 +81,6 @@ file_path = "plasma-org.kde.plasma.desktop-appletsrc" # Selecting the configurat
 
 Reading, writing and saving a file
 
-# Reading the file itself
 with open(file_path, "r") as f: #Reading the file itself
     file_contents = f.read()
 
@@ -95,14 +92,11 @@ with open(file_path) as f: # Search for the index of the string(the part to be r
             index = num
             break
 
-# Changing the desired part of this file
 new_contents = file_contents.replace(file_contents.split("\n")[index-1], way_to_wallpaper) # Changing this line to a line containing our image
 
-# Writing changes back to the file
 with open(file_path, "w") as f: # Saving file changes
     f.write(new_contents)
 
-# Restarting the desktop to change the wallpaper
 os.system("kquitapp5 plasmashell && kstart5 plasmashell &") # Restarting the desktop
 
 Created by a beginner in programming, and in python in particular - NaiNaniNai
@@ -172,7 +166,6 @@ import random - Импортирование модуля random
 Этот блок находит и выбирает случайное изображение из папки Wallpapers(которая находится в этом же каталоге, если вы все правильно скачали).
 Также приводит его в состояние, позволяющего внести изменения в конфигурационный файл.
 
-# Choose random image
 os.chdir("Wallpapers")  # Переход в папку Wallpapers
 wallpaper = os.listdir()    # Нахождение всех файлов изображения, что находятся в папке. Вы также можете удалить/добавить новые изображения на свой выбор
 randomizer = random.randint(0, len(wallpaper)-1) # Выбор индекса случайного одного изображения
@@ -183,7 +176,6 @@ way_to_wallpaper = "Image="+os.getcwd()+"/"+random_wallpaper # Получени�
 
 Этот блок находит сам конфигурационный файл
 
-# Search for the file responsible for the current desktop wallpaper
 home_dir = os.path.expanduser("~") # Переход в домашнюю папку
 os.chdir(home_dir) # Переход в домашнюю папку
 os.chdir(".config") # Переход в папку .config
@@ -193,7 +185,6 @@ file_path = "plasma-org.kde.plasma.desktop-appletsrc" # Selecting the configurat
 
 Чтение, запись и сохранение файла
 
-# Reading the file itself
 with open(file_path, "r") as f: #Чтение самого файла
     file_contents = f.read()
 
@@ -205,14 +196,11 @@ with open(file_path) as f: #Поиск индекса строки(части,к
             index = num
             break
 
-# Changing the desired part of this file
 new_contents = file_contents.replace(file_contents.split("\n")[index-1], way_to_wallpaper)  # Изменение этой строки на строку, содержающую наше изображение
 
-# Writing changes back to the file
 with open(file_path, "w") as f:  # Сохранение изменений файла
     f.write(new_contents)
 
-# Restarting the desktop to change the wallpaper
 os.system("kquitapp5 plasmashell && kstart5 plasmashell &") # Перезапуск рабочего стола
 
 Создано новичком в программирование, и в питоне частности - NaiNaniNai
