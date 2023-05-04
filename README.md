@@ -2,15 +2,15 @@
 
 This script was written by a person whose level of knowledge of the language Python proficiency is not very high, so clearly something could have been done better.
 
-WARNING:
+**WARNING:**
 
 THE DOCUMENTATION WAS ORIGINALLY WRITTEN IN RUSSIAN AND TRANSLATED INTO ENGLISH USING AN ONLINE TRANSLATOR, SO THE TRANSLATION MAY NOT BE ACCURATE.
-I RECOMMEND READING, IF POSSIBLE, IN THE CREATOR'S NATIVE LANGUAGE (WHICH IS LOCATED BELOW)
+**I RECOMMEND READING, IF POSSIBLE, IN THE CREATOR'S NATIVE LANGUAGE** (WHICH IS LOCATED BELOW)
 
 THE SCRIPT WAS CREATED FOR Linux Manjaro (KDE PLASMA), and I am not responsible for its performance on other operating systems or on other distributions.
-EVEN IF YOU HAVE A SIMILAR SYSTEM TO MINE, USE IT AT YOUR OWN RISK.
+EVEN IF YOU HAVE A SIMILAR SYSTEM TO MINE, USE IT **AT YOUR OWN RISK.
 
-RECOMMENDATION:
+**RECOMMENDATION:**
 
 Try to familiarize yourself with the os library first before using the script.
 Create your own text document in this folder, then copy the contents of the configuration file that changes this script.
@@ -44,7 +44,7 @@ with open(file_path, "w") as f:
 6) Check if your test text file changes the content you need.
 7) If the result is positive, delete the new lines, and uncomment the lines (13-38)
 
-DOCUMENTATION:
+**DOCUMENTATION:
 
 This script uses the built-in Python library (os). There is no need to pump anything.
 
@@ -103,16 +103,16 @@ Created by a beginner in programming, and in python in particular - NaiNaniNai
 
 
 
-RUSSIAN LANGUAGE (РУССКИЙ ЯЗЫК:)
+**RUSSIAN LANGUAGE (РУССКИЙ ЯЗЫК:)
 
 Этот скрипт был написан человеком, чьи уровень знания языка Питон чуть выше плинтуса, поэтому явно что-то можно было сделать лучше.
 
-ПРЕДУПРЕЖДЕНИЕ:
+**ПРЕДУПРЕЖДЕНИЕ:
 
 СКРИПТ БЫЛ СОЗДАН ДЛЯ Linux Manjaro (KDE PLASMA), и я не отвечаю за его работоспособность на других операционных системах или на других дистрибутивах.
-ДАЖЕ ЕСЛИ У ВАС СХОЖАЯ СИСТЕМА С МОЕЙ, ТО ИСПОЛЬЗУЙТЕ НА СВОЙ СТРАХ И РИСК.
+ДАЖЕ ЕСЛИ У ВАС СХОЖАЯ СИСТЕМА С МОЕЙ, ТО ИСПОЛЬЗУЙТЕ **НА СВОЙ СТРАХ И РИСК.
 
-РЕКОМЕНДАЦИЯ:
+**РЕКОМЕНДАЦИЯ:
 
 Попробуйте сперва ознакомиться с библиотекой os перед использованием скрипта.
 Создайте собственный текстовый документ в этой папке, затем скопируйте содержимое конфигурационного файла, который меняет этот скрипт.
@@ -146,7 +146,7 @@ with open(file_path, "w") as f:
 6) Проверьте меняет ли ваш тестовый текстовый файл нужное вам содержимое.
 7) При положительном результате, удалите новые строчки, и раскомментируйте строки (13-38)
 
-ДОКУМЕНТАЦИЯ:
+**ДОКУМЕНТАЦИЯ:
 
 Данный скрипт использует встроенную библиотеки Python'а (os). Ничего докачивать не надо.
 
