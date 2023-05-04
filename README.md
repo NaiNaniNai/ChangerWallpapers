@@ -21,7 +21,6 @@ Step-by-step guide recommendations:
 3) Paste the copied into test.txt
 4) Open main.py and comment out lines (13-38)
 5) Enter the following code:
-
 ```
 os.chdir("..")
 file_path = "test.txt" 
@@ -55,33 +54,35 @@ I will conditionally divide the script into several blocks for the convenience o
 
 This block imports the os library, as well as the built-in random module
 
+```
 import os - Importing the os library
 import random - Importing the random module
+```
 
 2) Block No. 2:
 
 This block finds and selects a random image from the Wallpapers folder (which is located in the same directory, if you downloaded everything correctly).
 It also puts it in a state that allows you to make changes to the configuration file.
-
+```
 os.chdir("Wallpapers") # Go to the Wallpapers folder
 wallpaper = os.listdir()    # Finding all the image files that are in the folder. You can also delete/add new images of your choice
 randomizer = random.randint(0, len(wallpaper)-1) # Selecting the index of a random single image
 random_wallpaper = wallpaper[randomizer] # Selecting this image itself
 way_to_wallpaper = "Image="+os.getcwd()+"/"+random_wallpaper # Getting the full name of this image suitable for entering into the config file
-
+```
 3) Block No. 3:
 
 This block finds the configuration file itself
-
+```
 home_dir = os.path.expanduser("~") #Go to the home folder
 os.chdir(home_dir) # Go to the home folder
 os.chdir(".config") # Go to the .config folder
 file_path = "plasma-org.kde.plasma.desktop-appletsrc" # Selecting the configuration file itself
-
+```
 4) Block No. 4:
 
 Reading, writing and saving a file
-
+```
 with open(file_path, "r") as f: #Reading the file itself
     file_contents = f.read()
 
@@ -99,7 +100,7 @@ with open(file_path, "w") as f: # Saving file changes
     f.write(new_contents)
 
 os.system("kquitapp5 plasmashell && kstart5 plasmashell &") # Restarting the desktop
-
+```
 Created by a beginner in programming, and in python in particular - NaiNaniNai
 
 
@@ -124,7 +125,7 @@ Created by a beginner in programming, and in python in particular - NaiNaniNai
 3) Вставьте скопированные в test.txt
 4) Откройте main.py и закомментируйте строки (13-38)
 5) Внесите следующий код:
-
+```
 os.chdir("..")
 file_path = "test.txt" 
 
@@ -143,7 +144,7 @@ new_contents = file_contents.replace(file_contents.split("\n")[index-1], way_to_
 
 with open(file_path, "w") as f:
     f.write(new_contents)
-
+```
 6) Проверьте меняет ли ваш тестовый текстовый файл нужное вам содержимое.
 7) При положительном результате, удалите новые строчки, и раскомментируйте строки (13-38)
 
@@ -156,36 +157,34 @@ with open(file_path, "w") as f:
 1) Блок №1:
 
 Этот блок импортирует библиотеку os, а также встроенный модуль random
-
+```
 import os  - Импортирование библиотеки os
 import random - Импортирование модуля random
-
-
-
+```
 2) Блок №2:
 
 Этот блок находит и выбирает случайное изображение из папки Wallpapers(которая находится в этом же каталоге, если вы все правильно скачали).
 Также приводит его в состояние, позволяющего внести изменения в конфигурационный файл.
-
+```
 os.chdir("Wallpapers")  # Переход в папку Wallpapers
 wallpaper = os.listdir()    # Нахождение всех файлов изображения, что находятся в папке. Вы также можете удалить/добавить новые изображения на свой выбор
 randomizer = random.randint(0, len(wallpaper)-1) # Выбор индекса случайного одного изображения
 random_wallpaper = wallpaper[randomizer] # Выбор самого этого изображения
 way_to_wallpaper = "Image="+os.getcwd()+"/"+random_wallpaper # Получение полного названия этого изображения, подходящего для внесения в конфиг-файл
-
+```
 3) Блок №3:
 
 Этот блок находит сам конфигурационный файл
-
+```
 home_dir = os.path.expanduser("~") # Переход в домашнюю папку
 os.chdir(home_dir) # Переход в домашнюю папку
 os.chdir(".config") # Переход в папку .config
 file_path = "plasma-org.kde.plasma.desktop-appletsrc" # Selecting the configuration file itself # Нахождние конфигурационного файла
-
+```
 4) Блок №4:
 
 Чтение, запись и сохранение файла
-
+```
 with open(file_path, "r") as f: #Чтение самого файла
     file_contents = f.read()
 
@@ -203,5 +202,5 @@ with open(file_path, "w") as f:  # Сохранение изменений фа�
     f.write(new_contents)
 
 os.system("kquitapp5 plasmashell && kstart5 plasmashell &") # Перезапуск рабочего стола
-
+```
 Создано новичком в программирование, и в питоне частности - NaiNaniNai
