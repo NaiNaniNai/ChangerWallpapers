@@ -1,4 +1,4 @@
-ENGLISH LANGUAGE:
+**ENGLISH LANGUAGE:**
 
 This script was written by a person whose level of knowledge of the language Python proficiency is not very high, so clearly something could have been done better.
 
