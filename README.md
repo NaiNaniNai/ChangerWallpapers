@@ -18,7 +18,8 @@ EVEN IF YOU HAVE A SIMILAR SYSTEM TO MINE, USE IT **AT YOUR OWN RISK.**
 
 Try to familiarize yourself with the os library first before using the script.
 Create your own text document in this folder, then copy the contents of the configuration file that changes this script.
-Then comment out the lines (13-38) in the program and add your own to check if what you want is changing. (The wallpaper will not change, because it is just a copy of the configuration file, but you can understand if what is really needed is changing)
+Then comment out the lines (13-38) in the program and add your own to check if what you want is changing. (The wallpaper will not change, because it is just a copy of the configuration file, but you can understand if what is really needed is changing).
+
 Step-by-step guide recommendations:
 1) Create a text file - test.txt
 2) Open your configuration file (home/username/.config/plasma-org.kde.plasma.desktop-appletsrc) and copy all the contents
@@ -122,7 +123,8 @@ Created by a beginner in programming, and in python in particular - NaiNaniNai
 
 Попробуйте сперва ознакомиться с библиотекой os перед использованием скрипта.
 Создайте собственный текстовый документ в этой папке, затем скопируйте содержимое конфигурационного файла, который меняет этот скрипт.
-Затем в программе закомментируйте строки (13-38) и добавьте свои, чтобы проверить меняется ли то, что вы хотите. (Обои не поменяются, поскольку это просто копия конфигурационного файла, но за то вы можете понять меняется ли то, что действительно надо)
+Затем в программе закомментируйте строки (13-38) и добавьте свои, чтобы проверить меняется ли то, что вы хотите. (Обои не поменяются, поскольку это просто копия конфигурационного файла, но за то вы можете понять меняется ли то, что действительно надо).
+
 Поэтапный гайд рекомендации:
 1) Создайте текстовый файл - test.txt
 2) Откройте свой конфигурационный файл (home/имяпользователя/.config/plasma-org.kde.plasma.desktop-appletsrc) и скопируйте все содержимое
