@@ -35,6 +35,7 @@ random_wallpaper = wallpaper[randomizer]
 way_to_wallpaper = "Image="+folder_wallpaper+"/"+random_wallpaper
 
 file_path_screenlocker = "kscreenlockerrc"
+
 with open(file_path_screenlocker, "r") as f:
     file_contents = f.read()
 
