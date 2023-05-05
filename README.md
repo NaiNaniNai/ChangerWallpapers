@@ -114,7 +114,7 @@ Also, I don't see any point in giving a comment to each line below the written c
 
 5) Block No. 5:
 
-This block changes the selection of a random picture so that the wallpaper on the desktop and the lock screen are different. You can comment this block in the program so that the wallpaper is the same.
+This block changes the selection of a random picture so that the wallpaper on the desktop and the lock screen are different. You can comment these lines of code in the program so that the wallpaper is the same.
 
 ```python
 randomizer = random.randint(0, len(wallpaper)-1)
@@ -257,7 +257,7 @@ os.system("kquitapp5 plasmashell && kstart5 plasmashell &") # Перезапус
 
 5) Блок №5:
 
-Этот блок меняет выбор случайной картинки, чтобы обои на рабочем столе и экране блокировки были разными. Вы можете закомментировать этот блок в программе, чтобы обои были одинаковыми.
+Этот блок меняет выбор случайной картинки, чтобы обои на рабочем столе и экране блокировки были разными. Вы можете закомментировать эти строчки кода в программе, чтобы обои были одинаковыми.
 
 ```python
 randomizer = random.randint(0, len(wallpaper)-1)
