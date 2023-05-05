@@ -1,4 +1,4 @@
-**DEMONSTRATION HOW SCRIPT IS WORKING(ДЕМОНСТРАЦИЯ КАК РАБОТАЕТ СКРИПТ):**
+**DEMONSTRATION HOW SCRIPT IS WORKING (ДЕМОНСТРАЦИЯ КАК РАБОТАЕТ СКРИПТ):**
 ![Ouups, it's don't work](example.gif)
 
 
