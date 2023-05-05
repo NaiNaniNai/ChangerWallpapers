@@ -108,7 +108,8 @@ with open(file_path, "w") as f: # Saving file changes
 os.system("kquitapp5 plasmashell && kstart5 plasmashell &") # Restarting the desktop
 ```
 
-**FURTHER BLOCKS CHANGE THE WALLPAPER ON THE LOCK SCREEN, IF YOU DON'T NEED IT, THEN YOU CAN SAFELY DELETE THE CODE THAT IS BELOW**
+**FURTHER BLOCKS CHANGE THE WALLPAPER ON THE LOCK SCREEN, IF YOU DON'T NEED IT, THEN YOU CAN SAFELY DELETE THE CODE THAT IS BELOW.**
+
 Also, I don't see any point in giving a comment to each line below the written code, since it is executed indentically to the higher one.
 
 5) Block No. 5:
@@ -250,7 +251,8 @@ with open(file_path, "w") as f:  # Сохранение изменений фа�
 os.system("kquitapp5 plasmashell && kstart5 plasmashell &") # Перезапуск рабочего стола
 ```
 
-**ДАЛЬНЕЙШИЕ БЛОКИ МЕНЯЮТ ОБОИ НА ЭКРАНЕ БЛОКИРОВКИ, ЕСЛИ ВЫ НЕ НУЖДАЕТЕСЬ В ЭТОМ, ТО МОЖЕТЕ СМЕЛО УДАЛЯТЬ ТОТ КОД, ЧТО НАХОДИТСЯ НИЖЕ**
+**ДАЛЬНЕЙШИЕ БЛОКИ МЕНЯЮТ ОБОИ НА ЭКРАНЕ БЛОКИРОВКИ, ЕСЛИ ВЫ НЕ НУЖДАЕТЕСЬ В ЭТОМ, ТО МОЖЕТЕ СМЕЛО УДАЛЯТЬ ТОТ КОД, ЧТО НАХОДИТСЯ НИЖЕ.**
+
 Также не вижу смысла приводить комментарий к каждой строке ниже написанного кода, поскольку выполняется он индентично вышестоящему.
 
 5) Блок №5:
