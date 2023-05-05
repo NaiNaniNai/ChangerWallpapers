@@ -73,7 +73,8 @@ os.chdir("Wallpapers") # Go to the Wallpapers folder
 wallpaper = os.listdir()    # Finding all the image files that are in the folder. You can also delete/add new images of your choice
 randomizer = random.randint(0, len(wallpaper)-1) # Selecting the index of a random single image
 random_wallpaper = wallpaper[randomizer] # Selecting this image itself
-way_to_wallpaper = "Image="+os.getcwd()+"/"+random_wallpaper # Getting the full name of this image suitable for entering into the config file
+folder_wallpaper = os.getcwd() # Getting the way to image
+way_to_wallpaper = "Image="+folder_wallpaper+"/"+random_wallpaper # Getting the full name of this image suitable for entering into the config file
 ```
 3) Block No. 3:
 
@@ -106,13 +107,51 @@ with open(file_path, "w") as f: # Saving file changes
 
 os.system("kquitapp5 plasmashell && kstart5 plasmashell &") # Restarting the desktop
 ```
+
+**FURTHER BLOCKS CHANGE THE WALLPAPER ON THE LOCK SCREEN, IF YOU DON'T NEED IT, THEN YOU CAN SAFELY DELETE THE CODE THAT IS BELOW**
+Also, I don't see any point in giving a comment to each line below the written code, since it is executed indentically to the higher one.
+
+5) Block No. 5:
+
+This block changes the selection of a random picture so that the wallpaper on the desktop and the lock screen are different. You can comment this block in the program so that the wallpaper is the same.
+
+```python
+randomizer = random.randint(0, len(wallpaper)-1)
+random_wallpaper = wallpaper[randomizer]
+way_to_wallpaper = "Image="+folder_wallpaper+"/"+random_wallpaper
+```
+6) Block No. 6:
+This block finds the configuration file of the lock screen (since we are in the .config folder, there is no need to switch to it)
+
+```python
+file_path_screenlocker = "kscreenlockerrc"
+```
+
+7) Block No. 7:
+
+Reading, writing and saving a file
+
+```python
+with open(file_path_screenlocker, "r") as f:
+file_contents = f.read()
+
+with open(file_path_screenlocker) like f:
+for num, the string in enumerate(f, 1):
+if search_str is in the string:
+            index = number
+            break
+
+new_contents = file_contents.replace(file_contents.split("\n")[index-1], way_to_wallpaper)
+
+with open(file_path_screenlocker, "w") as f:
+f.entry(new_contents)
+```
+
 Created by a beginner in programming, and in python in particular - NaiNaniNai
-
-
 
 **RUSSIAN LANGUAGE (РУССКИЙ ЯЗЫК):**
 
-Этот скрипт был написан человеком, чьи уровень знания языка Питон чуть выше плинтуса, поэтому явно что-то можно было сделать лучше.
+Этот скрипт был написан человеком, чей уровень знания языка Питон чуть выше плинтуса, поэтому явно что-то можно было сделать лучше.
 
 **ПРЕДУПРЕЖДЕНИЕ:**
 
@@ -176,7 +215,8 @@ os.chdir("Wallpapers")  # Переход в папку Wallpapers
 wallpaper = os.listdir()    # Нахождение всех файлов изображения, что находятся в папке. Вы также можете удалить/добавить новые изображения на свой выбор
 randomizer = random.randint(0, len(wallpaper)-1) # Выбор индекса случайного одного изображения
 random_wallpaper = wallpaper[randomizer] # Выбор самого этого изображения
-way_to_wallpaper = "Image="+os.getcwd()+"/"+random_wallpaper # Получение полного названия этого изображения, подходящего для внесения в конфиг-файл
+folder_wallpaper = os.getcwd() # Получение пути к изображению
+way_to_wallpaper = "Image="+folder_wallpaper+"/"+random_wallpaper # Получение полного названия этого изображения, подходящего для внесения в конфиг-файл
 ```
 3) Блок №3:
 
@@ -209,4 +249,43 @@ with open(file_path, "w") as f:  # Сохранение изменений фа�
 
 os.system("kquitapp5 plasmashell && kstart5 plasmashell &") # Перезапуск рабочего стола
 ```
+
+**ДАЛЬНЕЙШИЕ БЛОКИ МЕНЯЮТ ОБОИ НА ЭКРАНЕ БЛОКИРОВКИ, ЕСЛИ ВЫ НЕ НУЖДАЕТЕСЬ В ЭТОМ, ТО МОЖЕТЕ СМЕЛО УДАЛЯТЬ ТОТ КОД, ЧТО НАХОДИТСЯ НИЖЕ**
+Также не вижу смысла приводить комментарий к каждой строке ниже написанного кода, поскольку выполняется он индентично вышестоящему.
+
+5) Блок №5:
+
+Этот блок меняет выбор случайной картинки, чтобы обои на рабочем столе и экране блокировки были разными. Вы можете закомментировать этот блок в программе, чтобы обои были одинаковыми.
+
+```python
+randomizer = random.randint(0, len(wallpaper)-1)
+random_wallpaper = wallpaper[randomizer]
+way_to_wallpaper = "Image="+folder_wallpaper+"/"+random_wallpaper
+```
+6) Блок №6:
+Этот блок находит конфигурационный файл экрана блокировки (поскольку мы итак находимся в папке .config, то переход в неё осуществлять не надо)
+
+```python
+file_path_screenlocker = "kscreenlockerrc"
+```
+7) Блок №7:
+
+Чтение, запись и сохранения файла
+
+```python
+with open(file_path_screenlocker, "r") as f:
+    file_contents = f.read()
+
+with open(file_path_screenlocker) as f:
+    for num, line in enumerate(f, 1):
+        if search_str in line:
+            index = num
+            break
+
+new_contents = file_contents.replace(file_contents.split("\n")[index-1], way_to_wallpaper)
+
+with open(file_path_screenlocker, "w") as f:
+    f.write(new_contents)
+```
+
 Создано новичком в программировании, и в частности питоне - NaiNaniNai
