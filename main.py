@@ -5,7 +5,8 @@ os.chdir("Wallpapers")
 wallpaper = os.listdir()
 randomizer = random.randint(0, len(wallpaper)-1)
 random_wallpaper = wallpaper[randomizer]
-way_to_wallpaper = "Image="+os.getcwd()+"/"+random_wallpaper
+folder_wallpaper = os.getcwd()
+way_to_wallpaper = "Image="+folder_wallpaper+"/"+random_wallpaper
 home_dir = os.path.expanduser("~")
 os.chdir(home_dir)
 os.chdir(".config")
@@ -29,4 +30,21 @@ with open(file_path, "w") as f:
 
 os.system("kquitapp5 plasmashell && kstart5 plasmashell &")
 
+randomizer = random.randint(0, len(wallpaper)-1)
+random_wallpaper = wallpaper[randomizer]
+way_to_wallpaper = "Image="+folder_wallpaper+"/"+random_wallpaper
 
+file_path_screenlocker = "kscreenlockerrc"
+with open(file_path_screenlocker, "r") as f:
+    file_contents = f.read()
+
+with open(file_path_screenlocker) as f:
+    for num, line in enumerate(f, 1):
+        if search_str in line:
+            index = num
+            break
+
+new_contents = file_contents.replace(file_contents.split("\n")[index-1], way_to_wallpaper)
+
+with open(file_path_screenlocker, "w") as f:
+    f.write(new_contents)
