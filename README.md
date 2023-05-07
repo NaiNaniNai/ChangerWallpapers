@@ -3,6 +3,8 @@
 
 UPDATE (07 may 2023): An executable file has been added, you may use it, **BUT THE FIST** test a script with a cmd. **ONLY IF THIS WORKS, YOU MAY USE EXECUTABLE FILE**. And ust it **AT YOUT OWN RISK.**
 
+ОБНОВЛЕНИЕ (07 мая 2023): Добавлен исполняемый файл, вы можете использовать его, ** НО СНАЧАЛА ** протестируйте скрипт с помощью cmd. **ТОЛЬКО ЕСЛИ ЭТО СРАБОТАЕТ, ВЫ МОЖЕТЕ ИСПОЛЬЗОВАТЬ ИСПОЛНЯЕМЫЙ ФАЙЛ**. И используйте его ** НА СВОЙ СТРАХ И РИСК.**
+
 **ENGLISH LANGUAGE:**
 
 This script was written by a person whose level of knowledge of the language Python proficiency is not very high, so clearly something could have been done better.
@@ -154,8 +156,6 @@ Created by a beginner in programming, and in python in particular - NaiNaniNai
 **RUSSIAN LANGUAGE (РУССКИЙ ЯЗЫК):**
 
 Этот скрипт был написан человеком, чей уровень знания языка Питон чуть выше плинтуса, поэтому явно что-то можно было сделать лучше.
-
-ОБНОВЛЕНИЕ (07 мая 2023): Добавлен исполняемый файл, вы можете использовать его, ** НО СНАЧАЛА ** протестируйте скрипт с помощью cmd. **ТОЛЬКО ЕСЛИ ЭТО СРАБОТАЕТ, ВЫ МОЖЕТЕ ИСПОЛЬЗОВАТЬ ИСПОЛНЯЕМЫЙ ФАЙЛ**. И используйте его ** НА СВОЙ СТРАХ И РИСК.**
 
 **ПРЕДУПРЕЖДЕНИЕ:**
 
