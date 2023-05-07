@@ -1,6 +1,7 @@
 **DEMONSTRATION HOW SCRIPT IS WORKING (ДЕМОНСТРАЦИЯ КАК РАБОТАЕТ СКРИПТ):**
 ![Ouups, it's don't work](example.gif)
 
+UPDATE (07 may 2023): An executable file has been added, you may use it, **BUT THE FIST** test a script with a cmd. **ONLY IF THIS WORKS, YOU MAY USE EXECUTABLE FILE**. And ust it **AT YOUT OWN RISK.**
 
 **ENGLISH LANGUAGE:**
 
@@ -153,6 +154,8 @@ Created by a beginner in programming, and in python in particular - NaiNaniNai
 **RUSSIAN LANGUAGE (РУССКИЙ ЯЗЫК):**
 
 Этот скрипт был написан человеком, чей уровень знания языка Питон чуть выше плинтуса, поэтому явно что-то можно было сделать лучше.
+
+ОБНОВЛЕНИЕ (07 мая 2023): Добавлен исполняемый файл, вы можете использовать его, ** НО СНАЧАЛА ** протестируйте скрипт с помощью cmd. **ТОЛЬКО ЕСЛИ ЭТО СРАБОТАЕТ, ВЫ МОЖЕТЕ ИСПОЛЬЗОВАТЬ ИСПОЛНЯЕМЫЙ ФАЙЛ**. И используйте его ** НА СВОЙ СТРАХ И РИСК.**
 
 **ПРЕДУПРЕЖДЕНИЕ:**
 
